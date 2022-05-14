@@ -4,6 +4,16 @@
     height: 17rem;
 }
 
+.video__display{ 
+    height: 180px;
+    width: 318px;
+}
+
+.video__display iframe {
+    height: 100%;
+    width: 100%;
+}
+
 .video__heading{
     margin: 0.3rem 0rem;
     padding: 0rem 0.5rem;

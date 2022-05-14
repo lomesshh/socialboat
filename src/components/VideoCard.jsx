@@ -4,9 +4,12 @@ const VideoCard = ({ video }) => {
   return (
     <div className="video__card">
       <div className="video__display">
-        <video width="320" height="190" controls>
-          <source src={video.video} type="video/mp4" />
-        </video>
+        <iframe
+          frameborder="0"
+          name="muscle_video"
+          src={video.video}
+          title="video"
+        ></iframe>
       </div>
       <div className="video__heading">
         <h3>{video.heading}</h3>
