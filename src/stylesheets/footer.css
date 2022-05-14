@@ -1,0 +1,13 @@
+footer{
+    padding: 1.5rem 0rem;
+    width: 100%;
+    border-top: 1px solid var(--primary-color);
+}
+
+footer h2{
+    text-align: center;
+}
+
+footer h2 i {
+    color: var(--primary-color);
+}

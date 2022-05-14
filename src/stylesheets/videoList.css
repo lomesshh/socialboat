@@ -1,0 +1,43 @@
+.video__list--outer{
+    min-height: 75vh;
+}
+
+.video__heading{
+    text-align: center;
+}
+
+.video__heading p {
+    margin-bottom: 0.5rem;
+}
+
+
+.video__heading div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;    
+}
+
+
+.video__heading button{
+    width: 3rem;
+    outline: none;
+    padding: 0.3rem 0.3rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.video__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.video__list h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+}

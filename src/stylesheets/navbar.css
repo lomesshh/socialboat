@@ -1,0 +1,53 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    box-shadow: 0 4px 6px -5px var(--box-shadow);
+    width: 100%;
+}
+
+.company__logo{
+    height: 5rem;
+    width: 5rem;
+}
+
+.profile__img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.company__logo img, .profile__img img {
+    height: 100%;
+    width: 100%;
+}
+
+.profile__img img{
+    border-radius: 50%;
+    border: 1px solid gray
+}
+
+.search__bar{
+    width: 60%
+}
+
+.search__bar input{
+    padding: 0.5rem 2rem;
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    outline: none;
+}
+
+@media screen and (max-width: 400px) {
+    .company__logo{
+        height: 4rem;
+        width: 4rem;
+    }
+    
+    .profile__img {
+        height: 3rem;
+        width: 3rem;
+    }
+    
+}
