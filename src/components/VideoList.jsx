@@ -23,16 +23,19 @@ const VideoList = () => {
           </button>
         </div>
       </div>
-      {query !== "" && (
-        <div className="video__list">
-          {videoArr?.length < 1 && (
-            <h2>No videos to display search something !</h2>
-          )}
-          {videoArr.map((video) => (
-            <VideoCard video={video} />
-          ))}
-        </div>
-      )}
+
+      <div className="video__list">
+        {videoArr?.length < 1 && (
+          <h2>No videos to display search something !</h2>
+        )}
+        {query !== "" && (
+          <div>
+            {videoArr.map((video) => (
+              <VideoCard video={video} />
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 };
