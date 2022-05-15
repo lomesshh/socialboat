@@ -3,7 +3,7 @@ import { VideoCard } from "./VideoCard";
 import { useVideo } from "../context/VideoContext";
 
 const VideoList = () => {
-  const { count, setCount, videoArr } = useVideo();
+  const { count, setCount, videoArr, query } = useVideo();
 
   return (
     <div className="video__list--outer">
@@ -23,14 +23,16 @@ const VideoList = () => {
           </button>
         </div>
       </div>
-      <div className="video__list">
-        {videoArr?.length < 1 && (
-          <h2>No videos to display search something !</h2>
-        )}
-        {videoArr.map((video) => (
-          <VideoCard video={video} />
-        ))}
-      </div>
+      {query !== "" && (
+        <div className="video__list">
+          {videoArr?.length < 1 && (
+            <h2>No videos to display search something !</h2>
+          )}
+          {videoArr.map((video) => (
+            <VideoCard video={video} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
